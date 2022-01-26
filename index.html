@@ -19,7 +19,7 @@
       text-transform: uppercase;
       font-weight: 600;
       font-size: 16px;
-      text-decoration: none;
+      text-decoration: none !important;
       color: #000;
       text-align: center;
     }
@@ -46,6 +46,63 @@
       height: 100px;
       width: 100px;
       margin: 0 auto;
+      padding-bottom: 10px;
+    }
+
+    .single_rose_shape img,
+    .rose_color_shape img {
+      max-width: 950px;
+      width: 100%;
+      height: auto;
+    }
+
+    .rose_color_text {
+      max-width: 400px;
+      width: 100%;
+    }
+
+    @media screen and (max-width: 767px) {
+      .rose_color_header {
+        display: flex !important;
+        flex-direction: column-reverse !important;
+        row-gap: 30px;
+      }
+
+      .single_rose_blog {
+        flex-direction: column-reverse !important;
+        row-gap: 30px;
+      }
+    }
+
+    @media screen and (max-width: 450px) {
+      .rose_color_header {
+        display: flex !important;
+        flex-direction: column-reverse !important;
+        row-gap: 30px;
+      }
+
+      .single_rose_blog {
+        flex-direction: column-reverse !important;
+        row-gap: 30px;
+      }
+
+      .rose_items {
+        justify-content: space-around;
+      }
+
+      .single_rose {
+        max-width: 100px !important;
+      }
+
+      .rose_selectSmall h2 {
+        text-align: center;
+        font-size: 28px !important;
+      }
+
+      .single_rose_text,
+      .rose_color_text {
+        text-align: center;
+      }
     }
   </style>
 </head>
@@ -54,7 +111,7 @@
   <section class="rose_color_area">
     <div class="page-width">
       <div class="rose_color_header"
-        style="display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #3737375d;">
+        style="display: grid; grid-template-columns: 1fr 1fr; align-items: center; justify-content: space-between; border-bottom: 1px solid #3737375d;">
         <!-- ROSE COLOUR TOP TEXT -->
         <div class="rose_color_text">
           <h2 style="font-size: 32px; font-weight: 500; color: #353535;">What's with a colour...</h2>
@@ -74,7 +131,7 @@
         </div>
       </div>
       <div class="rose_selectSmall"
-        style="margin-bottom: 50px; border-bottom: 1px solid #3737375d; margin-bottom: 30px; padding-bottom: 50px;">
+        style="margin-bottom: 50px; border-bottom: 1px solid #3737375d; margin-bottom: 30px; padding: 50px 0;">
         <h2 style="font-size: 32px; font-weight: 500; color: #353535;">Our Forever Rose Coloures</h2>
         <div class="rose_items" style="display: flex; flex-wrap: wrap; column-gap: 20px; row-gap: 20px;">
           <a href="#" class="single_rose">
