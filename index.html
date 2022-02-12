@@ -61,20 +61,14 @@
       width: 100%;
     }
 
-    @media screen and (max-width: 767px) {
-      .rose_color_header {
-        display: flex !important;
-        flex-direction: column-reverse !important;
-        row-gap: 30px;
-      }
-
-      .single_rose_blog {
-        flex-direction: column-reverse !important;
-        row-gap: 30px;
-      }
+    .rose_items {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      column-gap: 20px;
+      row-gap: 30px;
     }
 
-    @media screen and (max-width: 450px) {
+    @media screen and (max-width: 767px) {
       .rose_color_header {
         display: flex !important;
         flex-direction: column-reverse !important;
@@ -87,11 +81,40 @@
       }
 
       .rose_items {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    @media screen and (max-width: 576px) {
+      .rose_color_header {
+        display: flex !important;
+        flex-direction: column-reverse !important;
+        row-gap: 30px;
+      }
+
+      .rose_items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+      }
+
+      .single_rose_blog {
+        flex-direction: column-reverse !important;
+        row-gap: 30px;
+      }
+
+      .rose_items {
         justify-content: space-around;
       }
 
       .single_rose {
-        max-width: 100px !important;
+        max-width: 135px !important;
+      }
+
+      .single_rose img {
+        height: 80px !important;
+        width: 80px !important;
       }
 
       .rose_selectSmall h2 {
@@ -108,12 +131,12 @@
 </head>
 
 <body>
-  <section class="rose_color_area">
+  <section class="rose_color_area" id="toTop">
     <div class="page-width">
       <div class="rose_color_header"
-        style="display: grid; grid-template-columns: 1fr 1fr; align-items: center; justify-content: space-between; border-bottom: 1px solid #3737375d;">
+        style="display: grid; grid-template-columns: 1fr 1fr; justify-content: space-between; border-bottom: 1px solid #3737375d; margin-top: -100px;">
         <!-- ROSE COLOUR TOP TEXT -->
-        <div class="rose_color_text">
+        <div class="rose_color_text" style="padding-top: 120px;">
           <h2 style="font-size: 32px; font-weight: 500; color: #353535;">What's with a colour...</h2>
           <p style="padding-bottom: 15px;">
             Our Forever Rose's comes in a wide selection of colour and this little guide will help you decide wich
@@ -133,35 +156,29 @@
       <div class="rose_selectSmall"
         style="margin-bottom: 50px; border-bottom: 1px solid #3737375d; margin-bottom: 30px; padding: 50px 0;">
         <h2 style="font-size: 32px; font-weight: 500; color: #353535;">Our Forever Rose Coloures</h2>
-        <div class="rose_items" style="display: flex; flex-wrap: wrap; column-gap: 20px; row-gap: 20px;">
+        <div class="rose_items">
           <a href="#" class="single_rose">
-            <img src="https://cdn.shopify.com/s/files/1/0252/1058/5187/files/two-tone-orange-small.jpg?v=1643221180"
-              alt="">
+            <img src="https://cdn.shopify.com/s/files/1/0252/1058/5187/files/vibrant-red-small.jpg?v=1643245868" alt="">
             <span>VIBRANT RED</span>
           </a>
           <a href="#" class="single_rose">
-            <img src="https://cdn.shopify.com/s/files/1/0252/1058/5187/files/two-tone-orange-small.jpg?v=1643221180"
-              alt="">
+            <img src="https://cdn.shopify.com/s/files/1/0252/1058/5187/files/blush-pink-small.jpg?v=1643245867" alt="">
             <span>BLUSH PINK</span>
           </a>
           <a href="#" class="single_rose">
-            <img src="https://cdn.shopify.com/s/files/1/0252/1058/5187/files/two-tone-orange-small.jpg?v=1643221180"
-              alt="">
+            <img src="https://cdn.shopify.com/s/files/1/0252/1058/5187/files/hot-pink-small.jpg?v=1643245867" alt="">
             <span>HOT PINK</span>
           </a>
           <a href="#" class="single_rose">
-            <img src="https://cdn.shopify.com/s/files/1/0252/1058/5187/files/two-tone-orange-small.jpg?v=1643221180"
-              alt="">
+            <img src="https://cdn.shopify.com/s/files/1/0252/1058/5187/files/maroon-small.jpg?v=1643245868" alt="">
             <span>MAROON</span>
           </a>
           <a href="#" class="single_rose">
-            <img src="https://cdn.shopify.com/s/files/1/0252/1058/5187/files/two-tone-orange-small.jpg?v=1643221180"
-              alt="">
+            <img src="https://cdn.shopify.com/s/files/1/0252/1058/5187/files/pearl-pink-small.jpg?v=1643245867" alt="">
             <span>PEARL PINK</span>
           </a>
           <a href="#" class="single_rose">
-            <img src="https://cdn.shopify.com/s/files/1/0252/1058/5187/files/two-tone-orange-small.jpg?v=1643221180"
-              alt="">
+            <img src="https://cdn.shopify.com/s/files/1/0252/1058/5187/files/violet-small.jpg?v=1643245867" alt="">
             <span>VIOLET</span>
           </a>
           <a href="#" class="single_rose">
@@ -170,17 +187,15 @@
             <span>TWO - TONE PINK</span>
           </a>
           <a href="#" class="single_rose">
-            <img src="https://cdn.shopify.com/s/files/1/0252/1058/5187/files/two-tone-orange-small.jpg?v=1643221180"
-              alt="">
+            <img src="https://cdn.shopify.com/s/files/1/0252/1058/5187/files/coral-small.jpg?v=1643245868" alt="">
             <span>CORAL</span>
           </a>
           <a href="#" class="single_rose">
-            <img src="https://cdn.shopify.com/s/files/1/0252/1058/5187/files/two-tone-orange-small.jpg?v=1643221180"
-              alt="">
+            <img src="https://cdn.shopify.com/s/files/1/0252/1058/5187/files/white-small.jpg?v=1643245867" alt="">
             <span>WHITE</span>
           </a>
           <a href="#" class="single_rose">
-            <img src="https://cdn.shopify.com/s/files/1/0252/1058/5187/files/two-tone-orange-small.jpg?v=1643221180"
+            <img src="https://cdn.shopify.com/s/files/1/0252/1058/5187/files/champaign-nude-small.jpg?v=1643245867"
               alt="">
             <span>CHAMPAIGN NUDE</span>
           </a>
@@ -190,39 +205,33 @@
             <span>TWO - TONE ORANGE</span>
           </a>
           <a href="#" class="single_rose">
-            <img src="https://cdn.shopify.com/s/files/1/0252/1058/5187/files/two-tone-orange-small.jpg?v=1643221180"
-              alt="">
+            <img src="https://cdn.shopify.com/s/files/1/0252/1058/5187/files/black-small.jpg?v=1643245867" alt="">
             <span>BLACK</span>
           </a>
           <a href="#" class="single_rose">
-            <img src="https://cdn.shopify.com/s/files/1/0252/1058/5187/files/two-tone-orange-small.jpg?v=1643221180"
-              alt="">
+            <img src="https://cdn.shopify.com/s/files/1/0252/1058/5187/files/baby-blue-small.jpg?v=1643245867" alt="">
             <span>BABY BLUE</span>
           </a>
           <a href="#" class="single_rose">
-            <img src="https://cdn.shopify.com/s/files/1/0252/1058/5187/files/two-tone-orange-small.jpg?v=1643221180"
-              alt="">
+            <img src="https://cdn.shopify.com/s/files/1/0252/1058/5187/files/royal-blue-small.jpg?v=1643245867" alt="">
             <span>ROYAL BLUE</span>
           </a>
           <a href="#" class="single_rose">
-            <img src="https://cdn.shopify.com/s/files/1/0252/1058/5187/files/two-tone-orange-small.jpg?v=1643221180"
-              alt="">
+            <img src="https://cdn.shopify.com/s/files/1/0252/1058/5187/files/silver-small.jpg?v=1643245867" alt="">
             <span>SILVER</span>
           </a>
           <a href="#" class="single_rose">
-            <img src="https://cdn.shopify.com/s/files/1/0252/1058/5187/files/two-tone-orange-small.jpg?v=1643221180"
-              alt="">
+            <img src="https://cdn.shopify.com/s/files/1/0252/1058/5187/files/gold-small.jpg?v=1643245867" alt="">
             <span>GOLD</span>
           </a>
           <a href="#" class="single_rose">
-            <img src="https://cdn.shopify.com/s/files/1/0252/1058/5187/files/two-tone-orange-small.jpg?v=1643221180"
-              alt="">
+            <img src="https://cdn.shopify.com/s/files/1/0252/1058/5187/files/rose-gold-small.jpg?v=1643245867" alt="">
             <span>ROSE GOLD</span>
           </a>
         </div>
       </div>
       <div class="single_rose_blog"
-        style="display: flex; justify-content: space-around; align-items: center; column-gap: 30px; margin-bottom: 50px;">
+        style="display: flex; justify-content: space-around; column-gap: 30px; margin-bottom: 50px;">
         <div class="single_rose_text" style="max-width: 400px; width: 100%;">
           <h2 style="letter-spacing: 4px; font-size: 22px; font-weight: 500; color: #373737; padding-bottom: 30px;">
             VIBRANT RED</h2>
@@ -232,13 +241,16 @@
           <a href="#" class="single_blog_btn">SHOP VIBRANT RED COLOURE ROSE</a>
         </div>
         <div class="single_rose_shape">
-          <img src="https://cdn.shopify.com/s/files/1/0252/1058/5187/files/white-83.jpg?v=1643221181"
+          <img src="https://cdn.shopify.com/s/files/1/0252/1058/5187/files/vibrant-red.jpg?v=1643245868"
             alt="single_rose_shape">
         </div>
       </div>
+      <div class="go_to_back" style="border-bottom: 1px solid #3737375d; padding-bottom: 5px;">
+        <a href="#toTop" style="text-decoration: none !important; font-weight: 500; font-size: 18px;">Go To Top</a>
+      </div>
       <div class="single_rose_blog"
-        style="display: flex; justify-content: space-around; align-items: center; column-gap: 30px; margin-bottom: 50px;">
-        <div class="single_rose_text" style="max-width: 400px; width: 100%;">
+        style="display: flex; justify-content: space-around; column-gap: 30px; margin-bottom: 50px;">
+        <div class="single_rose_text" style="max-width: 400px; width: 100%; padding-top: 50px;">
           <h2 style="letter-spacing: 4px; font-size: 22px; font-weight: 500; color: #373737; padding-bottom: 30px;">
             VIBRANT RED</h2>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia quo aperiam iure deleniti consequatur,
@@ -247,7 +259,7 @@
           <a href="#" class="single_blog_btn">SHOP VIBRANT RED COLOURE ROSE</a>
         </div>
         <div class="single_rose_shape">
-          <img src="https://cdn.shopify.com/s/files/1/0252/1058/5187/files/white-83.jpg?v=1643221181"
+          <img src="https://cdn.shopify.com/s/files/1/0252/1058/5187/files/violet.jpg?v=1643245868"
             alt="single_rose_shape">
         </div>
       </div>
